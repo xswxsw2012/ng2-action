@@ -22,10 +22,12 @@ export class ProductService {
   }
 
   getProduct(id:number): Product {
+    //用find返回id对应的product
     return this.products.find((product) => product.id == id);
   }
 
   getCommentsForProductId(id:number): Comment[] {
+    //用filter返回id对应的product
     return this.comments.filter((comment: Comment) => comment.protectId == id);
   }
 }
