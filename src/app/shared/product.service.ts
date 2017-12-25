@@ -17,6 +17,11 @@ export class ProductService {
     new Comment(4, 2, "2017-05-05 20:22:22", "赵六", 4, "东西还不错"),
   ];
   constructor() { }
+
+  getAllCategories(): string[] {
+    return ["电子产品", "硬件设备", "图书"];
+  }
+
   getProducts() {
     return this.products;
   }
